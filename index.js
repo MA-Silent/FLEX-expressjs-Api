@@ -65,18 +65,6 @@ app.delete("/api/:id",(req,res)=>{
     })
 });
 
-// app.get("/api/add", (req,res)=>{
-//     const sql = 'INSERT INTO `author`(`id`,`name`,`most_populair`) VALUES (?,?,?)'
-//     const values = [id,"William Shakespeare","Romeo & Juliet"];
-//     c.execute(sql,values, (err, result, fields)=> {
-//         if(err instanceof Error){
-//             console.log(err)
-//         }
-//         res.send(`Added with id \`${id}\``);
-//         id++;
-//     })
-// })
-
 app.listen(port, ()=>{
     console.log(`app is online on http://localhost:${port}`)
 })
